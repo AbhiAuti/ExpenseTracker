@@ -1,0 +1,103 @@
+body {
+  background: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  margin-top: 6%;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home h3 {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Add Expense Button */
+.btn {
+  padding: 12px 24px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 15px 0;
+}
+
+.btn:hover {
+  background-color: #5848e5;
+}
+
+/* Expenses List */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+li {
+  background: #ffffff;
+  margin-bottom: 14px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+li button:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive Mobile View */
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 26px;
+  }
+
+  .home h3 {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+
+  li button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+}

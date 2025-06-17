@@ -1,0 +1,12 @@
+<div class="home">
+<h1>Welcome To Expense Tracker</h1>
+<button (click)="Add()" class="btn">AddExpense</button>
+<h3>track and manage your expenses effectively</h3>
+</div>
+
+<ul>
+  <li *ngFor="let exp of expenses">
+    {{exp.expenseName}} - ₹{{exp.amount}} : {{exp.description}}
+    <button (click)="deleteExpense(exp.id)">Delete</button>
+  </li>
+</ul>

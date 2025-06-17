@@ -1,0 +1,7 @@
+<!-- Add Expense Form -->
+<div class="add-expense-form">
+  <input type="text" [(ngModel)]="newExpense.expenseName" placeholder="Expense Name">
+  <input type="number" [(ngModel)]="newExpense.amount" placeholder="Amount"  min="0">
+  <input type="text" [(ngModel)]="newExpense.description" placeholder="Description">
+  <button (click)="addExpense()">Add Expense</button>
+</div>

@@ -1,0 +1,26 @@
+<div *ngIf="isLogin" class="main">
+<form [formGroup]="registerGroup" (ngSubmit)="onRegister()">
+  <h1>{{isLogin?"Register":"Login"}}</h1>
+ <label >Username</label>
+ <input type="text" formControlName="username" required="" >
+  <label >email</label>
+  <input type="text" formControlName="email" required="">
+  <label >password</label>
+  <input type="text" formControlName="password" required="">
+   <label >Fullname</label>
+ <input type="text" formControlName="fullname" required="" >
+  <button type="submit">Submit</button>
+  <button (click)="toggle()" class="toggle" type="btn">{{isLogin?"Already account login":"NO Account Register"}}</button>
+</form>
+</div>
+<div *ngIf="!isLogin" class="main">
+<form [formGroup]="loginGroup" (ngSubmit)="onLogin()">
+  <h1>{{isLogin?"Register":"Login"}}</h1>
+  <label>Username</label>
+  <input type="text" formControlName="username" required="" >
+<label>password</label>
+<input type="text" formControlName="password" required=""> 
+<button type="submit">Submit</button>
+<button (click)="toggle()" class="toggle" type="btn">{{isLogin?"Already account login":"NO Account Register"}}</button>
+</form>
+</div>
