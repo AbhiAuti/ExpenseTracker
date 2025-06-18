@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private baseurl=`http://localhost:8080`
+  private baseurl=`https://expensetrackerbackend-production-b406.up.railway.app/`
   constructor(private http :HttpClient) { }
 
   register(credential:any ):Observable<any>{

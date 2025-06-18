@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ExpenseService {
 
-  private baseUrl = 'http://localhost:8080/expenses';
+  private baseUrl = 'https://expensetrackerbackend-production-b406.up.railway.app/expenses';
 
   constructor(private http: HttpClient) { }
 
